@@ -1,0 +1,22 @@
+<mvc:View
+    controllerName="mi.saludo.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <App>
+        <pages>
+            <Page title="Proyecto Freestyle">
+                <content>
+                    <VBox class="sapUiSmallMargin">
+                        
+                        <Label text="Ingresa tu nombre:" />
+                        
+                        <Input id="inputNombre" placeholder="Escribe tu nombre aquí..." width="300px"/>
+                        
+                        <Button text="Saludar" press=".onMostrarSaludo" type="Emphasized" class="sapUiTinyMarginTop"/>
+
+                    </VBox>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>
