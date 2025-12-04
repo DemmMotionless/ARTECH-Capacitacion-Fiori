@@ -1,0 +1,20 @@
+{
+  "name": "artech-capacitacion-fiori",
+  "version": "1.0.0",
+  "description": "Este proyecto contiene una aplicación básica desarrollada con **SAP UI5** siguiendo el enfoque **Freestyle** (construcción manual). El objetivo es demostrar la comprensión de la estructura MVC (Modelo-Vista-Controlador) sin depender de generadores automáticos o plantillas Fiori Elements.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemmMotionless/ARTECH-Capacitacion-Fiori.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemmMotionless/ARTECH-Capacitacion-Fiori/issues"
+  },
+  "homepage": "https://github.com/DemmMotionless/ARTECH-Capacitacion-Fiori#readme"
+}

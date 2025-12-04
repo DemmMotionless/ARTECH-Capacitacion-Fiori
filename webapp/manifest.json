@@ -1,0 +1,67 @@
+{
+  "sap.app": {
+    "id": "artech-capacitacion-fiori",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "Mi App Fiori",
+    "description": "Ejemplo de manifest.json"
+  },
+
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "favicon": "img/favicon.ico"
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "my.app.view.Main",
+      "type": "XML",
+      "id": "Main"
+    },
+    "dependencies": {
+      "minUI5Version": "1.96.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {}
+      }
+    },
+    "models": {
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "viewPath": "my.app.view"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "Main",
+          "target": "Main"
+        }
+      ],
+      "targets": {
+        "Main": {
+          "viewName": "Main"
+        }
+      }
+    }
+  }
+}
