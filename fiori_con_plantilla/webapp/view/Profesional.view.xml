@@ -1,0 +1,14 @@
+<mvc:View controllerName="fioriconplantilla.controller.Profesional"
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="pageProfesional" title="Perfil Profesional" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <VBox id="vboxProfesional" class="sapUiSmallMargin">
+                <Title id="titleProfesional" text="ID de Perfil recibido: {vista>/idRecibido}" level="H2"/>
+                
+                <List id="idProfesional" headerText="Mis Habilidades" items="{local>/skills}">
+                    <StandardListItem id="stardarProfesional" title="{local>tecnologia}" description="{local>nivel}" />
+                </List>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

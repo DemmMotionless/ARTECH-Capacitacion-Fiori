@@ -1,0 +1,116 @@
+{
+  "_version": "1.76.0",
+  "sap.app": {
+    "id": "fioriconplantilla",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.19.6",
+      "toolsId": "0bff4b3e-d8df-4eda-b3f3-61d1237b1807"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.143.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+    "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+            "bundleName": "fioriconplantilla.i18n.i18n"
+        }
+      },
+    "local": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+    "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "fioriconplantilla.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "transition": "slide"
+    },
+    "routes": [
+        {
+            "name": "RouteMain",
+            "pattern": "",
+            "target": "TargetMain"
+        },
+        {
+            "name": "RouteHobbies",
+            "pattern": "hobbies",
+            "target": "TargetHobbies"
+        },
+        {
+            "name": "RouteProfesional",
+            "pattern": "profesional/{perfilId}",
+            "target": "TargetProfesional"
+        }
+    ],
+    "targets": {
+        "TargetMain": {
+            "viewName": "Main",
+            "viewLevel": 1
+          },
+        "TargetHobbies": {
+            "viewName": "Hobbies",
+            "viewLevel": 2
+          },
+        "TargetProfesional": {
+            "viewName": "Profesional",
+            "viewLevel": 2
+          }
+      }
+    },
+    "rootView": {
+      "viewName": "fioriconplantilla.view.App",
+      "type": "XML",
+      "id": "AppRoot",
+      "async": true
+    }
+  }
+}

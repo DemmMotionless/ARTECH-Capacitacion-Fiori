@@ -1,0 +1,6 @@
+<mvc:View controllerName="fioriconplantilla.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    displayBlock="true"> <!-- Asegura que la app se vea bien y ocupe toda la pantalla. -->
+    <App id="app"/> <!-- Permite que haya navegación entre páginas. -->
+</mvc:View>

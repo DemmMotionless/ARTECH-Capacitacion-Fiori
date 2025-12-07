@@ -1,0 +1,29 @@
+<mvc:View controllerName="fioriconplantilla.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+    
+    <Page id="pageMain" title="Mi Perfil">
+        <content>
+            <VBox id="vboxMain" class="sapUiSmallMargin">
+                <Title id="titleMain" text="Información Personal" class="sapUiSmallMarginBottom"/>
+                
+                <Text id="textMain" text="Nombre: {local>/usuario/nombre}" />
+                <Text id="text2Main" text="Apellido: {local>/usuario/apellido}" />
+                <Text id="text3Main" text="Email: {local>/usuario/email}" />
+                <Link id="linkMain" text="GitHub" href="{local>/usuario/github}" target="_blank"/>
+                
+                <HBox id="hboxMain" class="sapUiMediumMarginTop">
+                    <Button id="buttonMain" text="Mis Hobbies" 
+                            press=".onNavToHobbies" 
+                            type="Emphasized" 
+                            class="sapUiSmallMarginEnd"/>
+                            
+                    <Button id="button2Main" text="Info Profesional" 
+                            press=".onNavToProfesional" 
+                            type="Default"/>
+                </HBox>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

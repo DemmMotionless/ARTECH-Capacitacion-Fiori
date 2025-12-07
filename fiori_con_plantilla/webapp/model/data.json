@@ -1,0 +1,16 @@
+{
+  "usuario": {
+    "nombre": "Nahuel",
+    "apellido": "Neira",
+    "email": "nahuelekon2207@gmail.com / nahuel_sebastian2207@hotmail.com",
+    "github": "https://github.com/demmmotionless"
+  },
+  "hobbies": "🎧 Melómano | 🎮 Gamer | 💻 HTML. Codeo para vivir, juego para ganar.",
+  "skills": [
+    { "tecnologia": "SAPUI5", "nivel": "Junior" },
+    { "tecnologia": "HTML", "nivel": "Intermedio" },
+    { "tecnologia": "CSS", "nivel": "Intermedio" },
+    { "tecnologia": "JavaScript", "nivel": "Intermedio" },
+    { "tecnologia": "SQL", "nivel": "Intermedio" }
+  ]
+}

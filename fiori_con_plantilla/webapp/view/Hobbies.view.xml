@@ -1,0 +1,10 @@
+<mvc:View controllerName="fioriconplantilla.controller.Hobbies"
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+    <Page id="pageHobbies" title="Mis Hobbies" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <Panel id="panelHobbies" headerText="Lo que me gusta hacer" class="sapUiSmallMargin">
+                <Text id="textHobbies" text="{local>/hobbies}" />
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>
