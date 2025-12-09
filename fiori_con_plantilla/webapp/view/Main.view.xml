@@ -2,28 +2,67 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
     xmlns="sap.m">
-    
-    <Page id="pageMain" title="Mi Perfil">
+
+    <Page id="pageMain" title="Mi Perfil" class="sapUiContentPadding">
+
         <content>
-            <VBox id="vboxMain" class="sapUiSmallMargin">
-                <Title id="titleMain" text="Información Personal" class="sapUiSmallMarginBottom"/>
+
+            <!-- Panel tipo Card -->
+            <Panel id="panelPerfil" class="sapUiLargeMargin" headerText="Mi Perfil" expandable="false" width="100%" backgroundDesign="Solid">
                 
-                <Text id="textMain" text="Nombre: {local>/usuario/nombre}" />
-                <Text id="text2Main" text="Apellido: {local>/usuario/apellido}" />
-                <Text id="text3Main" text="Email: {local>/usuario/email}" />
-                <Link id="linkMain" text="GitHub" href="{local>/usuario/github}" target="_blank"/>
-                
-                <HBox id="hboxMain" class="sapUiMediumMarginTop">
-                    <Button id="buttonMain" text="Mis Hobbies" 
-                            press=".onNavToHobbies" 
-                            type="Emphasized" 
-                            class="sapUiSmallMarginEnd"/>
-                            
-                    <Button id="button2Main" text="Info Profesional" 
-                            press=".onNavToProfesional" 
-                            type="Default"/>
-                </HBox>
-            </VBox>
+                <VBox class="sapUiSmallMargin">
+
+                    <HBox alignItems="Center" class="sapUiMediumMarginBottom">
+
+                        <!-- Imagen redonda -->
+                        <Image 
+                            id="imgProfile"
+                            src="https://avatars.githubusercontent.com/u/92339059?v=4"
+                            width="120px"
+                            height="120px"
+                            class="profileImage sapUiSmallMarginEnd"/>
+
+                        <VBox>
+
+                            <ObjectHeader
+                                id="ohNombre"
+                                title="{local>/usuario/nombre} {local>/usuario/apellido}" />
+
+                            <ObjectAttribute 
+                                id="attrEmail"
+                                title="Email"
+                                text="{local>/usuario/email}" />
+
+                            <Link 
+                                id="linkGithub"
+                                text="GitHub"
+                                href="{local>/usuario/github}"
+                                target="_blank"/>
+
+                        </VBox>
+
+                    </HBox>
+
+                    <HBox id="hboxButtons" class="sapUiMediumMarginTop">
+                        <Button 
+                            id="btnHobbies"
+                            text="Mis Hobbies" 
+                            press=".onNavToHobbies"
+                            type="Emphasized"
+                            class="sapUiSmallMarginEnd" />
+
+                        <Button 
+                            id="btnProfesional"
+                            text="Info Profesional" 
+                            press=".onNavToProfesional" />
+                    </HBox>
+
+                </VBox>
+
+            </Panel>
+
         </content>
+
     </Page>
+
 </mvc:View>
